@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-800 font-sans;
+}
+
+table {
+  @apply table-auto border-collapse w-full;
+}
+
+thead th {
+  @apply bg-gray-200 text-left font-semibold px-4 py-2;
+}
+
+tbody tr {
+  @apply hover:bg-gray-100;
+}
+
+tbody td {
+  @apply border px-4 py-2;
+}

@@ -1,0 +1,203 @@
+/* Global styles */
+:root {
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --success: #22c55e;
+  --success-hover: #16a34a;
+  --warning: #f59e0b;
+  --warning-hover: #d97706;
+  --danger: #ef4444;
+  --danger-hover: #dc2626;
+}
+
+/* Layout */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Calendar styles */
+.fc {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.fc .fc-button {
+  background-color: var(--primary);
+  border: none;
+  font-weight: 500;
+}
+
+.fc .fc-button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Modal styles */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 32rem;
+  width: 100%;
+  margin: 1rem;
+}
+
+/* Dashboard grid styles */
+.dashboard-grid {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.dashboard-grid th,
+.dashboard-grid td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+}
+
+.dashboard-grid th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Company status highlighting */
+.company-overdue {
+  background-color: #fee2e2;
+}
+
+.company-due-today {
+  background-color: #fef3c7;
+}
+
+/* Notification badges */
+.notification-badge {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: var(--danger);
+  color: white;
+  border-radius: 9999px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Communication history tooltips */
+.communication-tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 40;
+  max-width: 20rem;
+  display: none;
+}
+
+.communication-item:hover .communication-tooltip {
+  display: block;
+}
+
+/* Form styles */
+.form-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  margin-top: 0.25rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  ring: 2px var(--primary);
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+/* Button styles */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background-color 150ms;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-success {
+  background-color: var(--success);
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: var(--success-hover);
+}
+
+.btn-warning {
+  background-color: var(--warning);
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: var(--warning-hover);
+}
+
+.btn-danger {
+  background-color: var(--danger);
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: var(--danger-hover);
+}
+
+/* Animation utilities */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
